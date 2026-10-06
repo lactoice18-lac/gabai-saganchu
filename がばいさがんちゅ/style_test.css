@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* ヘッダー */
+header {
+    background-color: white;
+    padding: 20px 40px;
+}
+
+/* ナビバー */
+nav {
+    background-color: white;
+    padding: 15px 40px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #008c95;
+}
+
+/* メイン */
+main {
+    padding: 40px;
+}
+
+/* 各セクション */
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+/* フッター */
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* ヘッダー横並び */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+.header-buttons button {
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.feature-buttons {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.feature-buttons a {
+    flex: 1;
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    border-radius: 15px;
+}
+
+.feature-buttons a:hover {
+    transform: translateY(-5px);
+}
+
+/* サークル一覧 */
+.circle-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+
+/* サークルカード */
+.circle-card {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+
+/* サークル画像 */
+.circle-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* タグ */
+.circle-card p {
+    color: #008c95;
+}
+
+
+/* 交流歓迎 */
+.circle-card span {
+    display: inline-block;
+    background-color: #e6f5f5;
+    color: #008c95;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+
+/* マウスを乗せた時 */
+.circle-card:hover {
+    transform: translateY(-5px);
+}
+
+/* イベントカレンダー */
+.event-calendar {
+    text-align: center;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+
+.calendar div {
+    min-height: 80px;
+    padding: 10px;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.calendar div:nth-child(7n+1) {
+    color: #d66;
+}
+
+.calendar div:nth-child(7n) {
+    color: #6688cc;
+}
